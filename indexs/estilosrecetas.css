@@ -1,0 +1,163 @@
+/* General Styles */
+body {
+    font-family: "Playwrite IE", serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #fef6e4;
+}
+
+/* Header */
+.header {
+    background-color: rgb(201, 108, 55);
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.header h1 {
+    font-size: 2.8rem;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.header nav a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(201, 108, 55);
+    padding: 0.5rem 1.2rem;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.header nav a:hover {
+    background-color: rgb(0, 0, 0);
+    transform: scale(1.1);
+}
+
+/* Intro Section */
+.intro {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #fff5e1;
+}
+.intro img {
+    max-width: 80%;
+    height: auto;
+    margin-top: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.intro h2 {
+    font-family: "Playwrite IE", serif;
+    font-size: 2.5rem;
+    color: rgb(0, 0, 0);
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.intro p {
+    font-size: 1.3rem;
+    color: #555;
+    margin-top: 1rem;
+}
+
+/* Details Section */
+.details {
+    padding: 2rem 1rem;
+    background-color: #fdf0e6;
+}
+.details h3 {
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid rgb(201, 108, 55);
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+.details ul, .details ol {
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+    color: #444;
+}
+.details ul li, .details ol li {
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+.details ol {
+    list-style: decimal;
+}
+.details ul {
+    list-style: square;
+}
+
+/* Story Section */
+.story {
+    padding: 3rem 1rem;
+    background-color: #fef6e4;
+    border-top: 3px solid rgb(201, 108, 55);
+    text-align: center;
+}
+.story h3 {
+    font-size: 2.2rem;
+    color:rgb(201, 108, 55);
+    margin-bottom: 1rem;
+}
+.story p {
+    font-size: 1.4rem;
+    color: #555;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background-color: rgb(201, 108, 55);
+    color: white;
+    padding: 1.5rem 0;
+    font-size: 1rem;
+}
+.footer p {
+    margin: 0;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: #f05454;
+    color: white;
+    padding: 0.6rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn:hover {
+    background-color: #ff7675;
+    transform: translateY(-3px);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+    .intro h2, .details h3, .story h3 {
+        font-size: 1.8rem;
+    }
+    .intro p, .details ul li, .details ol li, .story p {
+        font-size: 1.1rem;
+    }
+}

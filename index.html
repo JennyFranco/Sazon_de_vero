@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El sazón de Vero</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IE:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Katibeh&family=Playwrite+IE&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>El sazón de Vero</h1>
+            <nav>
+                <ul class="nav">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#recetas">Recetas</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="intro">
+            <div class="container">
+                <h2 id="typewriter"></h2> <!-- Aquí se aplicará el efecto de máquina de escribir -->
+                <br>
+                <p>Explora las recetas que han sido parte de momentos inolvidables, desde los Peneques hasta el Pozole.</p>
+                <img src="imagenes/Mesa tradicional.jpg" alt="Mesa con platillos tradicionales mexicanos">
+            </div>
+        </section>
+        
+        <section id="recetas" class="recetas py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Galería de recetas</h2>
+                <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Primera receta -->
+                        <div class="carousel-item active">
+                            <a href="indexs/peneques.html">
+                                <img src="imagenes/peneques (1).jpg" class="d-block w-100" alt="Peneques">
+                            </a>
+                            <div class="carousel-caption">
+                                <h5>Peneques</h5>
+                            </div>
+                        </div>
+                        <!-- Segunda receta -->
+                        <div class="carousel-item">
+                            <a href="indexs/cochinita.html">
+                                <img src="imagenes/cochinita pibil.webp" class="d-block w-100" alt="Cochinita Pibil">
+                            </a>
+                            <div class="carousel-caption">
+                                <h5>Cochinita Pibil</h5>
+                            </div>
+                        </div>
+                        <!-- Tercera receta -->
+                        <div class="carousel-item">
+                            <a href="indexs/pozole.html">
+                                <img src="imagenes/pozole.jpg" class="d-block w-100" alt="Pozole">
+                            </a>
+                            <div class="carousel-caption">
+                                <h5>Pozole</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controles de navegación -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#recipeCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#recipeCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id="sobre-vero" class="sobre-vero py-5">
+            <div class="container d-flex align-items-center">
+                <div class="text-content">
+                    <h2 class="text-center">¿Quién es Vero Gama?</h2>
+                    <p>
+                        Verónica Gama Vázquez, cariñosamente conocida como Vero, es el corazón y el alma detrás de "El sazón de Vero". 
+                        Originaria de la Ciudad de México, Vero ha dedicado su vida a la cocina, perfeccionando recetas que han sido el núcleo 
+                        de momentos inolvidables para su familia. Su amor por la cocina comenzó desde pequeña, inspirada por su madre y abuela, 
+                        quienes le enseñaron el valor de los sabores tradicionales. Ahora, con 60 años, Vero continúa transmitiendo su legado culinario 
+                        a través de sus platillos, siendo una inspiración para quienes buscan mantener vivas las tradiciones familiares.
+                    </p>
+                    <p>
+                        Esposa de Alex, a quien cariñosamente llama "el Güerejo", y madre de dos hijos, Erick y Eder, Vero ha logrado unir a su familia 
+                        en torno a la mesa, haciendo de cada platillo un puente entre generaciones. Su sazón, lleno de amor y dedicación, es un testimonio 
+                        de su pasión por la cocina y su deseo de compartirlo con el mundo.
+                    </p>
+                </div>
+                <div class="image-content">
+                    <img src="imagenes/vero gama .jpg" alt="Verónica Gama" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </section>        
+        <section id="contacto" class="contacto">
+            <div class="container">
+                <h2>Contacto</h2>
+                <p>¿Interesado en conocer más? Escríbenos para recibir el recetario completo.</p>
+                <form>
+                    <input type="text" placeholder="Tu nombre" required>
+                    <input type="email" placeholder="Tu correo electrónico" required>
+                    <textarea placeholder="Tu mensaje" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 El sazón de Vero. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const text = "Bienvenidos a El sazón de Vero";
+            const typewriter = document.getElementById("typewriter");
+            let i = 0;
+    
+            function typeEffect() {
+                if (i < text.length) {
+                    typewriter.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(typeEffect, 100); // Ajusta el tiempo para cambiar la velocidad
+                }
+            }
+    
+            typeEffect();
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
